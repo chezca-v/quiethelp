@@ -78,13 +78,14 @@ PHASE 3 — Emergency System Integration        [   Future    ]
 
 <div align="center">
 
-| Avatar | Name | Role |
-|---|---|---|
-| <img src="https://github.com/chezca-v.png" width="40" style="border-radius:50%"/> | [chezca-v](https://github.com/chezca-v) | Project Lead & Developer |
+- Franchezca Banayad
+- Princess Mae Sanchez
+- Allyson Laus
+- Leila Arowen Dumindin
 
 <br/>
 
-*Built with 💜 for the Cambridge University Press & Assessment*
-*Women in Tech: Building Inclusive Digital Solutions Hackathon 2025*
+*Built during the Cambridge University Press & Assessment*
+*Women in Tech: Building Inclusive Digital Solutions Hackathon 2026*
 
 </div>
