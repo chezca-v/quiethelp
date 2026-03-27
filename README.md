@@ -76,15 +76,13 @@ PHASE 3 — Emergency System Integration        [   Future    ]
 
 ## 👩‍💻 Contributors
 
-<div align="center">
-
 - Franchezca Banayad
 - Princess Mae Sanchez
 - Allyson Laus
 - Leila Arowen Dumindin
 
 <br/>
-
+<div align="center">
 *Built during the Cambridge University Press & Assessment*
 *Women in Tech: Building Inclusive Digital Solutions Hackathon 2026*
 
