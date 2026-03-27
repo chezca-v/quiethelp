@@ -1,78 +1,90 @@
-# Blueprint: QuietHelp
+<div align="center">
 
-## 1. Overview
+# 🛡️ QuietHelp
 
-QuietHelp is a Flutter-based mobile application that allows users to send silent emergency alerts to trusted contacts. The application uses Firebase for backend services including authentication, database, and push notifications.
+**Silent. Fast. Life-saving.**
 
-## 2. Style and Design
+*A women's safety app that sends emergency alerts without making a sound.*
 
-*   **Theme:** Dark theme with a primary color of deep purple.
-*   **Scaffold Background Color:** `#121212`
-*   **Color Scheme:** Based on `Colors.deepPurple` with `Brightness.dark`.
-*   **Typography:** Default Flutter typography.
-*   **Iconography:** Standard Material Design icons.
+---
 
-## 3. Existing Features
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![Firestore](https://img.shields.io/badge/Firestore-FF6F00?style=for-the-badge&logo=firebase&logoColor=white)
+![Google Maps](https://img.shields.io/badge/Google%20Maps-4285F4?style=for-the-badge&logo=googlemaps&logoColor=white)
 
-### 3.1. User Authentication
+</div>
 
-*   **Login Screen (`/login`):** Allows users to log in to their account.
-*   **Register Screen (`/register`):** Allows new users to create an account.
-*   **Authentication Service (`lib/features/auth/auth_service.dart`):** Manages user authentication state.
+---
 
-### 3.2. Core Alerting
+## 🏆 Achievements
 
-*   **Alert Screen (`/alert`):** The main screen for triggering an emergency alert.
-*   **Alert History Screen (`/history`):** Displays a history of past alerts.
+<div align="center">
 
-### 3.3. Contact Management
+```
+╔══════════════════════════════════════════════════════╗
+║                                                      ║
+║   🥈  2nd Place — Codeathon                          ║
+║                                                      ║
+║   Women in Tech: Building Inclusive Digital          ║
+║   Solutions Hackathon 2025                           ║
+║   Cambridge University Press & Assessment            ║
+║                                                      ║
+╚══════════════════════════════════════════════════════╝
+```
 
-*   **Contacts Screen (`/contacts`):** Displays a list of trusted contacts.
-*   **Add Contact Screen (`/add_contact`):** Allows users to add new trusted contacts.
+</div>
 
-### 3.4. Location Services
+---
 
-*   **Location Map Screen (`/map`):** Displays a map with the user's location.
-*   **Geolocator:** The app uses the `geolocator` package to get the user's location.
+## ✨ Features
 
-### 3.5. Offline Support
+| Feature | Description |
+|---|---|
+| 🔕 **Silent SOS** | Trigger an emergency alert without making a sound — no calls, no noise |
+| 📍 **Live Location Sharing** | Real-time GPS tracking shared instantly with trusted contacts |
+| 📱 **SMS Alerts** | Sends emergency texts with a location link even without internet |
+| 🎭 **Disguise Mode** | Hides the app behind a decoy screen to avoid detection |
+| 👥 **Trusted Contacts** | Manage up to 5 emergency contacts who receive your alerts |
+| 📜 **Alert History** | Full log of every SOS triggered with timestamp and location |
+| 📶 **Offline Support** | Detects connectivity loss and adapts alert behavior accordingly |
 
-*   **Offline Banner:** A banner is displayed at the top of the screen when the user is offline.
-*   **Connectivity Service (`lib/core/services/connectivity_service.dart`):** Monitors the user's network connectivity.
+---
 
-### 3.6. Disguise Mode
+## 🗺️ Roadmap
 
-*   **Disguise Screen (`/disguise`):** A screen to disguise the app.
-*   **Disguise Settings Screen (`/disguise_settings`):** Allows the user to configure the disguise mode.
+```
+PHASE 1 — Core Launch                         [ In Progress ]
+├── Silent SOS alert trigger
+├── SMS alerts to trusted contacts
+├── Live GPS location sharing
+└── Pilot with 3–5 partner schools
 
-### 3.7. Navigation
+PHASE 2 — Wearable Integration                [   Planned   ]
+├── Smartwatch SOS (tap to trigger)
+├── Smart necklace hardware support
+└── Barangay locale alert routing
 
-*   The app uses the `go_router` package for navigation.
-*   The main navigation is handled by a `ShellRoute` in `lib/app.dart`.
+PHASE 3 — Emergency System Integration        [   Future    ]
+├── Direct line to 911 response centers
+├── Barangay VAWC desk notifications
+└── Manila City government integration
+```
 
-## 4. Plan for SMS Feature
+---
 
-The goal is to implement a feature that sends an SMS to the user's trusted contacts when an alert is triggered.
+## 👩‍💻 Contributors
 
-### 4.1. Install `telephony` package
+<div align="center">
 
-I will add the `telephony` package to the `pubspec.yaml` file to enable sending SMS messages. This package provides a simple API for sending SMS messages.
+| Avatar | Name | Role |
+|---|---|---|
+| <img src="https://github.com/chezca-v.png" width="40" style="border-radius:50%"/> | [chezca-v](https://github.com/chezca-v) | Project Lead & Developer |
 
-### 4.2. Update `AlertScreen`
+<br/>
 
-I will modify the `AlertScreen` to trigger the SMS sending functionality when the alert is triggered.
+*Built with 💜 for the Cambridge University Press & Assessment*
+*Women in Tech: Building Inclusive Digital Solutions Hackathon 2025*
 
-### 4.3. Implement SMS Sending Logic
-
-I will create a new function in `lib/features/alert/alert_screen.dart` to handle the SMS sending logic. This function will:
-1.  Retrieve the user's trusted contacts from Firestore.
-2.  Get the user's current location using the `geolocator` package.
-3.  For each trusted contact, send an SMS with the emergency alert and the user's location.
-
-### 4.4. Handle Permissions
-
-I will add the necessary permissions to the `AndroidManifest.xml` file to allow the app to send SMS messages and access the user's location. I will also use the `permission_handler` package to request these permissions at runtime.
-
-### 4.5. Test the feature
-
-I will add a test to verify that the SMS is sent correctly when an alert is triggered.
+</div>
